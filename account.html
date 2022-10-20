@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css">
+    <title>Трио Пицца</title>
+<link href="css/main.css" rel="stylesheet"></head>
+<body>
+    <header class="header container">
+    <a href="/" class="header__logo">
+        <img src="assets/logo.svg" alt="TrioPizza">
+        <p>Доставка еды в Москве</p>
+    </a>
+    <div class="header__desktop">
+        <a class="phone" href="tel:+74952003020">
+            <span>8 (495) 200 30 20</span>
+            <svg viewBox="0 0 25 25" height="24">
+                <use href="assets/icons.svg#phone"/>
+            </svg>
+        </a>
+
+        <div class="header__desktopSchedule">
+            <p>Принимаем заказы с 9:00 до 23:00 </p>
+            <div class="week">
+                <div class="week__day">пн</div>
+                <div class="week__day week__day--active">вт</div>
+                <div class="week__day">ср</div>
+                <div class="week__day">чт</div>
+                <div class="week__day">пт</div>
+                <div class="week__day">сб</div>
+                <div class="week__day">вс</div>
+            </div>
+        </div>
+
+        <div class="header__deliveryBtn" data-for-modal="delivery">Информация о доставке</div>
+
+        <div id="cart_desktop" class="header__cart" data-for-modal="cart">
+            <div class="header__cartImg">
+                <div class="header__cartCount">3</div>
+            </div>
+            <div class="header__cartSum">1390 ₽</div>
+        </div>
+
+        <a class="header__user" href="/account.html" target="_blank">
+            <svg viewBox="0 0 21 24">
+                <use href="assets/icons.svg#user"></use>
+            </svg>
+            <p>Сергей</p>
+        </a>
+    </div>
+    <div class="header__burger">
+        <div></div>
+        <div></div>
+    </div>
+    <div class="header__menu">
+        <div class="header__schedule">
+            <a href="tel:+74952003020" class="phone">8 (495) 200 30 20</a>
+            <p>Принимаем заказы с 9:00 до 23:00 </p>
+            <div class="week">
+                <div class="week__day">пн</div>
+                <div class="week__day week__day--active">вт</div>
+                <div class="week__day">ср</div>
+                <div class="week__day">чт</div>
+                <div class="week__day">пт</div>
+                <div class="week__day">сб</div>
+                <div class="week__day">вс</div>
+            </div>
+        </div>
+        <div class="header__delivery">
+            <div class="delivery__clouds">
+                <img src="assets/images/delivery/cloud1.svg" alt="">
+                <img src="assets/images/delivery/cloud2.svg" alt="">
+            </div>
+            <div class="delivery__content container">
+                <h2>Быстрая доставка</h2>
+                <p class="orange">30-40 минут</p>
+                <h3>Стоимость доставки</h3>
+
+                <div class="delivery__block">
+                    <p class="orange">159 ₽</p>
+                    <p class="gray">Сумма заказа до 499 ₽</p>
+                </div>
+                <div class="delivery__block">
+                    <p class="orange">79 ₽</p>
+                    <p class="gray">Сумма заказа до 2999 ₽</p>
+                </div>
+                <div class="delivery__block">
+                    <p class="orange">Бесплатная</p>
+                    <p class="gray">Сумма заказа от 3000 ₽</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="modal deliveryDesktop" data-modal="delivery">
+    <div class="modal__container">
+        <div class="modal__close"></div>
+        <div class="modal__content">
+            <div class="deliveryDesktop__container">
+                <div class="deliveryDesktop__info">
+                    <h2>Быстрая доставка</h2>
+                    <p class="highlight descr">30-40 минут</p>
+
+                    <h3>Стоимость доставки</h3>
+
+                    <div class="deliveryDesktop__block">
+                        <p class="highlight">159 ₽</p>
+                        <p class="gray">Сумма заказа до 499 ₽</p>
+                    </div>
+                    <div class="deliveryDesktop__block">
+                        <p class="highlight">79 ₽</p>
+                        <p class="gray">Сумма заказа до 2999 ₽</p>
+                    </div>
+                    <div class="deliveryDesktop__block">
+                        <p class="highlight">Бесплатная</p>
+                        <p class="gray">Сумма заказа от 3000 ₽</p>
+                    </div>
+                </div>
+
+                <div class="deliveryDesktop__img">
+                    <img src="../../assets/images/delivery.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="account" id="account_page">
+        <div class="container">
+            <div class="account__wrap">
+                <h2>Личные данные</h2>
+                <form onsubmit="" name="personal">
+                    <div class="input account__input">
+                        <input type="text" name="personal_name" id="personal_name" placeholder=" " value="Сергей">
+                        <label for="personal_name">Имя</label>
+                    </div>
+                    <div class="input account__input">
+                        <input type="text" name="personal_phone" id="personal_phone" placeholder=" " value="+78005553535">
+                        <label for="personal_phone">Телефон</label>
+                    </div>
+                    <div class="account__tooltip">
+                        <span>День рождения</span>
+                        <span data-tippy-content="Мы дарим скидки и подарки в день рождения. День рождения нельзя изменить." class="account__tooltipIcon"></span>
+                    </div>
+                    <div class="input account__input account__birthday">
+                        <input type="date" name="personal_birthday" id="personal_birthday" placeholder=" ">
+                        <button type="button" class="link">Сохранить</button>
+                    </div>
+
+                    <fieldset class="account__addresses">
+                        <div class="account__address">
+                            <label class="radio" for="address-1">г. Москва, Старая Басманная ул., 19 строение 13, кв. 62
+                                <input id="address-1" type="radio" name="personal_address" value="0" checked="checked">
+                                <span class="radio__checkmark"></span>
+                            </label>
+                            <button type="button" class="link" data-for-modal="change-address">Изменить</button>
+                        </div>
+                        <div class="account__address">
+                            <label class="radio" for="address-2">г. Москва, Цветной б-р, 21 строение 5
+                                <input id="address-2" type="radio" name="personal_address" value="1">
+                                <span class="radio__checkmark"></span>
+                            </label>
+                            <button type="button" class="link" data-for-modal="change-address">Изменить</button>
+                        </div>
+                        <button type="button" class="link" data-for-modal="change-address">Добавить адрес</button>
+                    </fieldset>
+                </form>
+
+                <div class="history">
+                    <h2 class="history__title">История заказов</h2>
+                    <p class="history__descr">Последние 20 заказов за последние 90 дней</p>
+
+                    <div class="history__grid">
+                        <div class="history__no history__head">№</div>
+                        <div class="history__date history__head">Дата заказа</div>
+                        <div class="history__sum history__head">Сумма</div>
+
+                        <div class="history__no">241</div>
+                        <div class="history__date">5.07.2022, 13:24</div>
+                        <div class="history__sum">699 ₽</div>
+
+                        <div class="history__no">241</div>
+                        <div class="history__date">5.07.2022, 13:24</div>
+                        <div class="history__sum">699 ₽</div>
+
+                        <div class="history__no">241</div>
+                        <div class="history__date">5.07.2022, 13:24</div>
+                        <div class="history__sum">699 ₽</div>
+
+                        <div class="history__no">241</div>
+                        <div class="history__date">5.07.2022, 13:24</div>
+                        <div class="history__sum">699 ₽</div>
+
+                        <div class="history__no">241</div>
+                        <div class="history__date">5.07.2022, 13:24</div>
+                        <div class="history__sum">699 ₽</div>
+                    </div>
+                </div>
+
+                <a href="#" class="account__logout btn btn--light">Выйти</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal--grey" data-modal="cart" id="cart_modal">
+    <div class="modal__container">
+        <div class="modal__close"></div>
+        <div class="modal__content cart">
+            <div class="cart__items" id="cart-items">
+                <div class="cartItem" data-cart-item="first-cart-product-id" data-price="0">
+                    <img src="/assets/images/cart/cart1.png" class="cartItem__img" alt="">
+                    <p class="cartItem__title">Pizza</p>
+                    <p class="cartItem__weight">400 г</p>
+                    <div class="cartItem__sum">0.00 ₽</div>
+                    <div class="cartItem__delete"></div>
+                </div>
+
+                <div class="cartItem" data-cart-item="second-cart-product-id" data-price="650">
+                    <img src="/assets/images/cart/cart1.png" class="cartItem__img" alt="">
+                    <p class="cartItem__title">Pizza</p>
+                    <p class="cartItem__weight">400 г</p>
+                    <div class="cartItem__counter btn btn--light">
+                        <div class="cartItem__counter__minus">-</div>
+                        <div class="cartItem__counter__quantity">2</div>
+                        <div class="cartItem__counter__plus">+</div>
+                    </div>
+                    <div class="cartItem__sum">1300.00 ₽</div>
+                    <div class="cartItem__delete"></div>
+                </div>
+
+            </div>
+
+            <div class="cart__form">
+                <form onsubmit="" name="cart">
+                    <div class="input input--promocode">
+                        <input type="text" name="cart_promocode" id="cart_promocode" placeholder=" ">
+                        <label for="cart_promocode">Промокод</label>
+                        <button id="cart_promocode_submit" type="button" class="link">Применить</button>
+                        <span class="input__error">Неверный промокод</span>
+                    </div>
+
+                    <script>
+                        //валидация промокода
+                        const RIGHT_CODE = 'GHS577ET2'
+                        const cartPromocodeBtn = document.getElementById('cart_promocode_submit')
+                        const cartPromocodeInput = document.getElementById('cart_promocode')
+                        const cartPromocodeWrap = cartPromocodeInput.parentElement
+
+                        cartPromocodeBtn.addEventListener('click', function () {
+                            if (cartPromocodeInput.value === RIGHT_CODE) {
+                                console.log('code accepted')
+                                cartPromocodeWrap.classList.remove('input--error')
+                                cartPromocodeWrap.classList.add('input--accepted')
+                            }
+                            else {
+                                console.log('wrong code')
+                                cartPromocodeWrap.classList.remove('input--accepted')
+                                cartPromocodeWrap.classList.add('input--error')
+                            }
+                        })
+
+                        //если код принят но юзер начал менять поле - убираем галку
+                        // и возвращаем кнопку "применить"
+                        cartPromocodeInput.addEventListener('input', function (e) {
+                            if (cartPromocodeWrap.classList.contains('input--accepted')) {
+                                if (e.target.value !== RIGHT_CODE) {
+                                    cartPromocodeWrap.classList.remove('input--accepted')
+                                }
+                            }
+                        })
+                    </script>
+
+                    <div class="cart__summary">
+                        <p><span>4 товара</span><span>1677 ₽</span></p>
+                        <p><span>Доставка</span><span>79 ₽</span></p>
+                        <p><span>Сумма заказа</span><span class="cart__total">1756 ₽</span></p>
+                    </div>
+                    <a href="/checkout.html" class="btn btn--fullWidth">Оформить заказ</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modal modal--address" data-modal="change-address">
+    <div class="modal__container">
+        <div class="modal__close"></div>
+        <h1 class="modal__title">Изменить адрес</h1>
+        <div class="modal__content changeAddress">
+            <form onsubmit="" name="change-address">
+                <div class="input">
+                    <input type="text" name="address_street" id="address_street" placeholder=" ">
+                    <label for="address_street">Улица</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="address_house" id="address_house" placeholder=" ">
+                    <label for="address_house">Дом</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="address_building" id="address_building" placeholder=" ">
+                    <label for="address_building">Строение</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="address_apt" id="address_apt" placeholder=" ">
+                    <label for="address_apt">Квартира</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="address_entrance" id="address_entrance" placeholder=" ">
+                    <label for="address_entrance">Подъезд</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="address_floor" id="address_floor" placeholder=" ">
+                    <label for="address_floor">Этаж</label>
+                </div>
+
+                <div class="changeAddress__btns">
+                    <a href="#" class="changeAddress__delete">Удалить адрес</a>
+                    <button type="submit" class="btn changeAddress__save">Сохранить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+    <div class="toolbar">
+    <a href="/" class="toolbar__btn toolbar__btn--active">
+        <svg viewBox="0 0 26 21">
+            <use href="assets/icons.svg#main"/>
+        </svg>
+        <p>Главная</p>
+    </a>
+    <a href="/account.html" class="toolbar__btn">
+        <svg viewBox="0 0 19 21">
+            <use href="assets/icons.svg#profile"/>
+        </svg>
+        <p>Профиль</p>
+    </a>
+    <a href="tel:+74952003020" class="toolbar__btn">
+        <svg viewBox="0 0 25 25" height="24">
+            <use href="assets/icons.svg#phone"/>
+        </svg>
+        <p>Позвонить</p>
+    </a>
+    <div id="cart_mobile" class="toolbar__btn" data-for-modal="cart">
+        <span class="toolbar__badge">3</span>
+        <svg viewBox="0 0 19 21">
+            <use href="assets/icons.svg#cart"/>
+        </svg>
+        <p>Корзина</p>
+    </div>
+</div>
+    <footer class="footer">
+    <div class="container">
+        <p class="footer__title">Принимаем заказы</p>
+        <p class="footer__phone">
+            <a href="tel:+74952003020">8 (495) 200 30 20</a>
+        </p>
+        <a class="footer__delivery">Информация о доставке</a>
+        <p class="footer__copy">TrioPizza © 2022</p>
+        <p class="footer__divasoft">
+            <a href="https://divasoft.ru/">Разработано в <img src="assets/divasoft.svg" alt="Divasoft"></a>
+        </p>
+    </div>
+</footer>
+<script defer="defer" src="js/169.js"></script><script defer="defer" src="js/main.js"></script></body>
+</html>

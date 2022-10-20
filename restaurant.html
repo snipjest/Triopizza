@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+        <title>Трио Пицца</title>
+    <link href="css/main.css" rel="stylesheet"></head>
+    <body>
+        <header class="header container">
+    <a href="/" class="header__logo">
+        <img src="assets/logo.svg" alt="TrioPizza">
+        <p>Доставка еды в Москве</p>
+    </a>
+    <div class="header__desktop">
+        <a class="phone" href="tel:+74952003020">
+            <span>8 (495) 200 30 20</span>
+            <svg viewBox="0 0 25 25" height="24">
+                <use href="assets/icons.svg#phone"/>
+            </svg>
+        </a>
+
+        <div class="header__desktopSchedule">
+            <p>Принимаем заказы с 9:00 до 23:00 </p>
+            <div class="week">
+                <div class="week__day">пн</div>
+                <div class="week__day week__day--active">вт</div>
+                <div class="week__day">ср</div>
+                <div class="week__day">чт</div>
+                <div class="week__day">пт</div>
+                <div class="week__day">сб</div>
+                <div class="week__day">вс</div>
+            </div>
+        </div>
+
+        <div class="header__deliveryBtn" data-for-modal="delivery">Информация о доставке</div>
+
+        <div id="cart_desktop" class="header__cart" data-for-modal="cart">
+            <div class="header__cartImg">
+                <div class="header__cartCount">3</div>
+            </div>
+            <div class="header__cartSum">1390 ₽</div>
+        </div>
+
+        <button type="button" class="btn btn--light" data-for-modal="login">Войти</button>
+    </div>
+    <div class="header__burger">
+        <div></div>
+        <div></div>
+    </div>
+    <div class="header__menu">
+        <div class="header__schedule">
+            <a href="tel:+74952003020" class="phone">8 (495) 200 30 20</a>
+            <p>Принимаем заказы с 9:00 до 23:00 </p>
+            <div class="week">
+                <div class="week__day">пн</div>
+                <div class="week__day week__day--active">вт</div>
+                <div class="week__day">ср</div>
+                <div class="week__day">чт</div>
+                <div class="week__day">пт</div>
+                <div class="week__day">сб</div>
+                <div class="week__day">вс</div>
+            </div>
+        </div>
+        <div class="header__delivery">
+            <div class="delivery__clouds">
+                <img src="assets/images/delivery/cloud1.svg" alt="">
+                <img src="assets/images/delivery/cloud2.svg" alt="">
+            </div>
+            <div class="delivery__content container">
+                <h2>Быстрая доставка</h2>
+                <p class="orange">30-40 минут</p>
+                <h3>Стоимость доставки</h3>
+
+                <div class="delivery__block">
+                    <p class="orange">159 ₽</p>
+                    <p class="gray">Сумма заказа до 499 ₽</p>
+                </div>
+                <div class="delivery__block">
+                    <p class="orange">79 ₽</p>
+                    <p class="gray">Сумма заказа до 2999 ₽</p>
+                </div>
+                <div class="delivery__block">
+                    <p class="orange">Бесплатная</p>
+                    <p class="gray">Сумма заказа от 3000 ₽</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="modal deliveryDesktop" data-modal="delivery">
+    <div class="modal__container">
+        <div class="modal__close"></div>
+        <div class="modal__content">
+            <div class="deliveryDesktop__container">
+                <div class="deliveryDesktop__info">
+                    <h2>Быстрая доставка</h2>
+                    <p class="highlight descr">30-40 минут</p>
+
+                    <h3>Стоимость доставки</h3>
+
+                    <div class="deliveryDesktop__block">
+                        <p class="highlight">159 ₽</p>
+                        <p class="gray">Сумма заказа до 499 ₽</p>
+                    </div>
+                    <div class="deliveryDesktop__block">
+                        <p class="highlight">79 ₽</p>
+                        <p class="gray">Сумма заказа до 2999 ₽</p>
+                    </div>
+                    <div class="deliveryDesktop__block">
+                        <p class="highlight">Бесплатная</p>
+                        <p class="gray">Сумма заказа от 3000 ₽</p>
+                    </div>
+                </div>
+
+                <div class="deliveryDesktop__img">
+                    <img src="../../assets/images/delivery.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="restaurant">
+            <div class="container">
+                <h2>Yes пицца</h2>
+                <p class="restaurant__descr">Описание ресторана описание ресторана описание ресторана описание ресторана описание ресторана описание ресторана описание ресторана описание ресторанаописание ресторана описание ресторана описание ресторана</p>
+            </div>
+        </div>
+
+        <div class="categories hide-scrollbar">
+    <div class="container">
+        <div class="categories__scrollable">
+            <a href="#" class="categories__item categories__item--active">Пицца</a>
+            <a href="#" class="categories__item">Бургеры</a>
+            <a href="#" class="categories__item">Салаты и закуски</a>
+            <a href="#" class="categories__item">Горячие блюда</a>
+            <a href="#" class="categories__item">
+                Полуфабрикаты
+                <svg viewBox="0 0 20 19">
+                    <use href="assets/icons.svg#leaf"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>
+        <div class="catalog container">
+            <h2>Пицца</h2>
+            <div class="catalog__grid">
+                <div class="catalog__item">
+                    <img class="catalog__image" src="assets/images/pizza1.png" alt="Пепперони">
+                    <div class="catalog__name">Пепперони</div>
+                    <div class="catalog__descr">Пикантная Пепперони, шампиньоны, сыр Моцарелла, фирменный пицца-соус, рукола</div>
+                    <div class="catalog__priceMobile btn btn--light" data-for-modal="catalog1">от 369 ₽</div>
+                    <div class="catalog__price">От 369 ₽</div>
+                    <a class="catalog__toCart btn btn--light" data-for-modal="catalog1">Выбрать</a>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__image" src="assets/images/pizza1.png" alt="Пепперони">
+                    <div class="catalog__name">Пепперони</div>
+                    <div class="catalog__descr">Пикантная Пепперони, шампиньоны, сыр Моцарелла, фирменный пицца-соус, рукола</div>
+                    <div class="catalog__priceMobile btn btn--light" data-for-modal="catalog2">от 369 ₽</div>
+                    <div class="catalog__price">От 369 ₽</div>
+                    <a class="catalog__toCart btn btn--light" data-for-modal="catalog2">Выбрать</a>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__image" src="assets/images/pizza1.png" alt="Пепперони">
+                    <div class="catalog__name">Пепперони</div>
+                    <div class="catalog__descr">Пикантная Пепперони, шампиньоны, сыр Моцарелла, фирменный пицца-соус, рукола</div>
+                    <div class="catalog__priceMobile btn btn--light" data-for-modal="catalog2">от 369 ₽</div>
+                    <div class="catalog__price">От 369 ₽</div>
+                    <a class="catalog__toCart btn btn--light" data-for-modal="catalog2">Выбрать</a>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__image" src="assets/images/pizza1.png" alt="Пепперони">
+                    <div class="catalog__name">Пепперони</div>
+                    <div class="catalog__descr">Пикантная Пепперони, шампиньоны, сыр Моцарелла, фирменный пицца-соус, рукола</div>
+                    <div class="catalog__priceMobile btn btn--light" data-for-modal="catalog2">от 369 ₽</div>
+                    <div class="catalog__price">От 369 ₽</div>
+                    <a class="catalog__toCart btn btn--light" data-for-modal="catalog2">Выбрать</a>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__image" src="assets/images/pizza1.png" alt="Пепперони">
+                    <div class="catalog__name">Пепперони</div>
+                    <div class="catalog__descr">Пикантная Пепперони, шампиньоны, сыр Моцарелла, фирменный пицца-соус, рукола</div>
+                    <div class="catalog__priceMobile btn btn--light" data-for-modal="catalog2">от 369 ₽</div>
+                    <div class="catalog__price">От 369 ₽</div>
+                    <a class="catalog__toCart btn btn--light" data-for-modal="catalog2">Выбрать</a>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__image" src="assets/images/pizza1.png" alt="Пепперони">
+                    <div class="catalog__name">Пепперони</div>
+                    <div class="catalog__descr">Пикантная Пепперони, шампиньоны, сыр Моцарелла, фирменный пицца-соус, рукола</div>
+                    <div class="catalog__priceMobile btn btn--light" data-for-modal="catalog2">от 369 ₽</div>
+                    <div class="catalog__price">От 369 ₽</div>
+                    <a class="catalog__toCart btn btn--light" data-for-modal="catalog2">Выбрать</a>
+                </div>
+            </div>
+            <h2>Бургеры</h2>
+            <div class="catalog__grid">
+                <div class="catalog__item">
+                    <img class="catalog__image" src="assets/images/burger1.png" alt="Бургер Crazy Chicken">
+                    <div class="catalog__name">Бургер Crazy Chicken</div>
+                    <div class="catalog__descr">Цыпленок в панировке приготовленный на углях, булочка Бриошь, лук и грибы карамелизованные, салат Айсберг, маринованные огурчики, томаты, кетчуп томатный, соус чесночный Ранч.</div>
+                    <div class="catalog__priceMobile btn btn--light" data-for-modal="catalog4">от 369 ₽</div>
+                    <div class="catalog__price">От 369 ₽</div>
+                    <a class="catalog__toCart btn btn--light" data-for-modal="catalog4">В корзину</a>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__image" src="assets/images/burger1.png" alt="Бургер Crazy Chicken">
+                    <div class="catalog__name">Бургер Crazy Chicken</div>
+                    <div class="catalog__descr">Цыпленок в панировке приготовленный на углях, булочка Бриошь, лук и грибы карамелизованные, салат Айсберг, маринованные огурчики, томаты, кетчуп томатный, соус чесночный Ранч.</div>
+                    <div class="catalog__priceMobile btn btn--light" data-for-modal="catalog4">от 369 ₽</div>
+                    <div class="catalog__price">От 369 ₽</div>
+                    <a class="catalog__toCart btn btn--light" data-add-to-cart="12">В корзину</a>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__image" src="assets/images/burger1.png" alt="Бургер Crazy Chicken">
+                    <div class="catalog__name">Бургер Crazy Chicken</div>
+                    <div class="catalog__descr">Цыпленок в панировке приготовленный на углях, булочка Бриошь, лук и грибы карамелизованные, салат Айсберг, маринованные огурчики, томаты, кетчуп томатный, соус чесночный Ранч.</div>
+                    <div class="catalog__priceMobile btn btn--light" data-for-modal="catalog4">от 369 ₽</div>
+                    <div class="catalog__price">От 369 ₽</div>
+                    <a class="catalog__toCart btn btn--light" data-add-to-cart="13">В корзину</a>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__image" src="assets/images/burger1.png" alt="Бургер Crazy Chicken">
+                    <div class="catalog__name">Бургер Crazy Chicken</div>
+                    <div class="catalog__descr">Цыпленок в панировке приготовленный на углях, булочка Бриошь, лук и грибы карамелизованные, салат Айсберг, маринованные огурчики, томаты, кетчуп томатный, соус чесночный Ранч.</div>
+                    <div class="catalog__priceMobile btn btn--light" data-for-modal="catalog4">от 369 ₽</div>
+                    <div class="catalog__price">От 369 ₽</div>
+                    <a class="catalog__toCart btn btn--light" data-add-to-cart="14">В корзину</a>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__image" src="assets/images/burger1.png" alt="Бургер Crazy Chicken">
+                    <div class="catalog__name">Бургер Crazy Chicken</div>
+                    <div class="catalog__descr">Цыпленок в панировке приготовленный на углях, булочка Бриошь, лук и грибы карамелизованные, салат Айсберг, маринованные огурчики, томаты, кетчуп томатный, соус чесночный Ранч.</div>
+                    <div class="catalog__priceMobile btn btn--light" data-for-modal="catalog4">от 369 ₽</div>
+                    <div class="catalog__price">От 369 ₽</div>
+                    <a class="catalog__toCart btn btn--light" data-add-to-cart="15">В корзину</a>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__image" src="assets/images/burger1.png" alt="Бургер Crazy Chicken">
+                    <div class="catalog__name">Бургер Crazy Chicken</div>
+                    <div class="catalog__descr">Цыпленок в панировке приготовленный на углях, булочка Бриошь, лук и грибы карамелизованные, салат Айсберг, маринованные огурчики, томаты, кетчуп томатный, соус чесночный Ранч.</div>
+                    <div class="catalog__priceMobile btn btn--light" data-for-modal="catalog4">от 369 ₽</div>
+                    <div class="catalog__price">От 369 ₽</div>
+                    <a class="catalog__toCart btn btn--light" data-add-to-cart="16">В корзину</a>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__image" src="assets/images/burger1.png" alt="Бургер Crazy Chicken">
+                    <div class="catalog__name">Бургер Crazy Chicken</div>
+                    <div class="catalog__descr">Цыпленок в панировке приготовленный на углях, булочка Бриошь, лук и грибы карамелизованные, салат Айсберг, маринованные огурчики, томаты, кетчуп томатный, соус чесночный Ранч.</div>
+                    <div class="catalog__priceMobile btn btn--light" data-for-modal="catalog4">от 369 ₽</div>
+                    <div class="catalog__price">От 369 ₽</div>
+                    <a class="catalog__toCart btn btn--light" data-add-to-cart="17">В корзину</a>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__image" src="assets/images/burger1.png" alt="Бургер Crazy Chicken">
+                    <div class="catalog__name">Бургер Crazy Chicken</div>
+                    <div class="catalog__descr">Цыпленок в панировке приготовленный на углях, булочка Бриошь, лук и грибы карамелизованные, салат Айсберг, маринованные огурчики, томаты, кетчуп томатный, соус чесночный Ранч.</div>
+                    <div class="catalog__priceMobile btn btn--light" data-for-modal="catalog4">от 369 ₽</div>
+                    <div class="catalog__price">От 369 ₽</div>
+                    <a class="catalog__toCart btn btn--light" data-add-to-cart="18">В корзину</a>
+                </div>
+            </div>
+        </div>
+        <div class="toolbar">
+    <a href="/" class="toolbar__btn toolbar__btn--active">
+        <svg viewBox="0 0 26 21">
+            <use href="assets/icons.svg#main"/>
+        </svg>
+        <p>Главная</p>
+    </a>
+    <a href="/account.html" class="toolbar__btn">
+        <svg viewBox="0 0 19 21">
+            <use href="assets/icons.svg#profile"/>
+        </svg>
+        <p>Профиль</p>
+    </a>
+    <a href="tel:+74952003020" class="toolbar__btn">
+        <svg viewBox="0 0 25 25" height="24">
+            <use href="assets/icons.svg#phone"/>
+        </svg>
+        <p>Позвонить</p>
+    </a>
+    <div id="cart_mobile" class="toolbar__btn" data-for-modal="cart">
+        <span class="toolbar__badge">3</span>
+        <svg viewBox="0 0 19 21">
+            <use href="assets/icons.svg#cart"/>
+        </svg>
+        <p>Корзина</p>
+    </div>
+</div>
+        <footer class="footer">
+    <div class="container">
+        <p class="footer__title">Принимаем заказы</p>
+        <p class="footer__phone">
+            <a href="tel:+74952003020">8 (495) 200 30 20</a>
+        </p>
+        <a class="footer__delivery">Информация о доставке</a>
+        <p class="footer__copy">TrioPizza © 2022</p>
+        <p class="footer__divasoft">
+            <a href="https://divasoft.ru/">Разработано в <img src="assets/divasoft.svg" alt="Divasoft"></a>
+        </p>
+    </div>
+</footer>
+
+        <div class="modal" data-modal="catalog1">
+    <div class="modal__container">
+        <div class="modal__close"></div>
+        <div class="modal__content">
+            <form name="product1form" onsubmit="" class="product">
+                <div class="product__img product__img--pizza" data-toggle="toggle-product-1">
+                    <div class="product__imgWrap">
+                        <img src="assets/images/pizza_product.png" alt="">
+                    </div>
+                </div>
+                <div class="product__info">
+                    <p class="product__title">Пепперони</p>
+                    <p class="product__weight">460 г</p>
+                    <p class="product__compound">Пикантная Пепперони, шампиньоны, сыр Моцарелла, фирменный пицца-соус, рукола</p>
+                    <div class="product__toggle">
+                        <fieldset class="toggle" id="toggle-product-1">
+                            <input id="product-1-whole" type="radio" name="product-1-toggle" value="0">
+                            <label for="product-1-whole" class="toggle__option">Целая</label>
+                            <input id="product-1-half" type="radio" name="product-1-toggle" value="1">
+                            <label for="product-1-half" class="toggle__option">Половина</label>
+                        </fieldset>
+                    </div>
+                    <div class="product__compoundTable">
+                        <p class="product__compoundTableRow">
+                            <span>Пищевая ценность на 100 г</span>
+                        </p>
+                        <p class="product__compoundTableRow">
+                            <span>Энерг. ценность</span>
+                            <span class="product__compoundTableUnderline"></span>
+                            <span>246 ккал</span>
+                        </p>
+                        <p class="product__compoundTableRow">
+                            <span>Белки</span>
+                            <span class="product__compoundTableUnderline"></span>
+                            <span>246 ккал</span>
+                        </p>
+                        <p class="product__compoundTableRow">
+                            <span>Жиры</span>
+                            <span class="product__compoundTableUnderline"></span>
+                            <span>246 ккал</span>
+                        </p>
+                        <p class="product__compoundTableRow">
+                            <span>Углеводы</span>
+                            <span class="product__compoundTableUnderline"></span>
+                            <span>246 ккал</span>
+                        </p>
+                    </div>
+                    <a href="#" class="btn product__btn" data-for-modal="cart" data-add-to-cart="9">Добавить в корзину за 369 ₽ </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal" data-modal="catalog2">
+    <div class="modal__container">
+        <div class="modal__close"></div>
+        <div class="modal__content">
+            <form name="product1form" onsubmit="" class="product">
+                <div class="product__img product__img--pizza" data-toggle="toggle-product-2">
+                    <div class="product__imgWrap">
+                        <img src="assets/images/pizza_product.png" alt="">
+                    </div>
+                </div>
+                <div class="product__info">
+                    <p class="product__title">Пепперони</p>
+                    <p class="product__weight">460 г</p>
+                    <p class="product__compound">Пикантная Пепперони, шампиньоны, сыр Моцарелла, фирменный пицца-соус, рукола</p>
+                    <div class="product__toggle">
+                        <fieldset class="toggle" id="toggle-product-2">
+                            <input id="product-2-whole" type="radio" name="product-2-toggle" value="0">
+                            <label for="product-2-whole" class="toggle__option">Целая</label>
+                            <input id="product-2-half" type="radio" name="product-2-toggle" value="1">
+                            <label for="product-2-half" class="toggle__option">Половина</label>
+                        </fieldset>
+                    </div>
+                    <div class="product__compoundTable">
+                        <p class="product__compoundTableRow">
+                            <span>Пищевая ценность на 100 г</span>
+                        </p>
+                        <p class="product__compoundTableRow">
+                            <span>Энерг. ценность</span>
+                            <span class="product__compoundTableUnderline"></span>
+                            <span>246 ккал</span>
+                        </p>
+                        <p class="product__compoundTableRow">
+                            <span>Белки</span>
+                            <span class="product__compoundTableUnderline"></span>
+                            <span>246 ккал</span>
+                        </p>
+                        <p class="product__compoundTableRow">
+                            <span>Жиры</span>
+                            <span class="product__compoundTableUnderline"></span>
+                            <span>246 ккал</span>
+                        </p>
+                        <p class="product__compoundTableRow">
+                            <span>Углеводы</span>
+                            <span class="product__compoundTableUnderline"></span>
+                            <span>246 ккал</span>
+                        </p>
+                    </div>
+                    <a href="#" class="btn product__btn" data-for-modal="cart" data-add-to-cart="10">Добавить в корзину за 369 ₽ </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal" data-modal="catalog4">
+    <div class="modal__container">
+        <div class="modal__close"></div>
+        <div class="modal__content">
+            <form name="product3form" onsubmit="" class="product">
+                <div class="product__img">
+                    <div class="product__imgWrap">
+                        <img src="assets/images/burger_product.png" alt="">
+                    </div>
+                </div>
+                <div class="product__info">
+                    <p class="product__title">Бургер Crazy Chicken</p>
+                    <p class="product__weight">460 г</p>
+                    <p class="product__compound">Цыпленок в панировке приготовленный на углях, булочка Бриошь, лук и грибы карамелизованные, салат Айсберг, маринованные огурчики, томаты, кетчуп томатный, соус чесночный Ранч</p>
+
+                    <div class="product__compoundTable">
+                        <p class="product__compoundTableRow">
+                            <span>Пищевая ценность на 100 г</span>
+                        </p>
+                        <p class="product__compoundTableRow">
+                            <span>Энерг. ценность</span>
+                            <span class="product__compoundTableUnderline"></span>
+                            <span>246 ккал</span>
+                        </p>
+                        <p class="product__compoundTableRow">
+                            <span>Белки</span>
+                            <span class="product__compoundTableUnderline"></span>
+                            <span>246 ккал</span>
+                        </p>
+                        <p class="product__compoundTableRow">
+                            <span>Жиры</span>
+                            <span class="product__compoundTableUnderline"></span>
+                            <span>246 ккал</span>
+                        </p>
+                        <p class="product__compoundTableRow">
+                            <span>Углеводы</span>
+                            <span class="product__compoundTableUnderline"></span>
+                            <span>246 ккал</span>
+                        </p>
+                    </div>
+                    <a href="#" class="btn product__btn" data-for-modal="cart" data-add-to-cart="11">Добавить в корзину за 369 ₽ </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+        <div class="modal modal--grey" data-modal="cart" id="cart_modal">
+    <div class="modal__container">
+        <div class="modal__close"></div>
+        <div class="modal__content cart">
+            <div class="cart__items" id="cart-items">
+                <div class="cartItem" data-cart-item="first-cart-product-id" data-price="0">
+                    <img src="/assets/images/cart/cart1.png" class="cartItem__img" alt="">
+                    <p class="cartItem__title">Pizza</p>
+                    <p class="cartItem__weight">400 г</p>
+                    <div class="cartItem__sum">0.00 ₽</div>
+                    <div class="cartItem__delete"></div>
+                </div>
+
+                <div class="cartItem" data-cart-item="second-cart-product-id" data-price="650">
+                    <img src="/assets/images/cart/cart1.png" class="cartItem__img" alt="">
+                    <p class="cartItem__title">Pizza</p>
+                    <p class="cartItem__weight">400 г</p>
+                    <div class="cartItem__counter btn btn--light">
+                        <div class="cartItem__counter__minus">-</div>
+                        <div class="cartItem__counter__quantity">2</div>
+                        <div class="cartItem__counter__plus">+</div>
+                    </div>
+                    <div class="cartItem__sum">1300.00 ₽</div>
+                    <div class="cartItem__delete"></div>
+                </div>
+
+            </div>
+
+            <div class="cart__form">
+                <form onsubmit="" name="cart">
+                    <div class="input input--promocode">
+                        <input type="text" name="cart_promocode" id="cart_promocode" placeholder=" ">
+                        <label for="cart_promocode">Промокод</label>
+                        <button id="cart_promocode_submit" type="button" class="link">Применить</button>
+                        <span class="input__error">Неверный промокод</span>
+                    </div>
+
+                    <script>
+                        //валидация промокода
+                        const RIGHT_CODE = 'GHS577ET2'
+                        const cartPromocodeBtn = document.getElementById('cart_promocode_submit')
+                        const cartPromocodeInput = document.getElementById('cart_promocode')
+                        const cartPromocodeWrap = cartPromocodeInput.parentElement
+
+                        cartPromocodeBtn.addEventListener('click', function () {
+                            if (cartPromocodeInput.value === RIGHT_CODE) {
+                                console.log('code accepted')
+                                cartPromocodeWrap.classList.remove('input--error')
+                                cartPromocodeWrap.classList.add('input--accepted')
+                            }
+                            else {
+                                console.log('wrong code')
+                                cartPromocodeWrap.classList.remove('input--accepted')
+                                cartPromocodeWrap.classList.add('input--error')
+                            }
+                        })
+
+                        //если код принят но юзер начал менять поле - убираем галку
+                        // и возвращаем кнопку "применить"
+                        cartPromocodeInput.addEventListener('input', function (e) {
+                            if (cartPromocodeWrap.classList.contains('input--accepted')) {
+                                if (e.target.value !== RIGHT_CODE) {
+                                    cartPromocodeWrap.classList.remove('input--accepted')
+                                }
+                            }
+                        })
+                    </script>
+
+                    <div class="cart__summary">
+                        <p><span>4 товара</span><span>1677 ₽</span></p>
+                        <p><span>Доставка</span><span>79 ₽</span></p>
+                        <p><span>Сумма заказа</span><span class="cart__total">1756 ₽</span></p>
+                    </div>
+                    <a href="/checkout.html" class="btn btn--fullWidth">Оформить заказ</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="modal modal--address" data-modal="change-address">
+    <div class="modal__container">
+        <div class="modal__close"></div>
+        <h1 class="modal__title">Изменить адрес</h1>
+        <div class="modal__content changeAddress">
+            <form onsubmit="" name="change-address">
+                <div class="input">
+                    <input type="text" name="address_street" id="address_street" placeholder=" ">
+                    <label for="address_street">Улица</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="address_house" id="address_house" placeholder=" ">
+                    <label for="address_house">Дом</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="address_building" id="address_building" placeholder=" ">
+                    <label for="address_building">Строение</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="address_apt" id="address_apt" placeholder=" ">
+                    <label for="address_apt">Квартира</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="address_entrance" id="address_entrance" placeholder=" ">
+                    <label for="address_entrance">Подъезд</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="address_floor" id="address_floor" placeholder=" ">
+                    <label for="address_floor">Этаж</label>
+                </div>
+
+                <div class="changeAddress__btns">
+                    <a href="#" class="changeAddress__delete">Удалить адрес</a>
+                    <button type="submit" class="btn changeAddress__save">Сохранить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+        <div class="modal login" data-modal="login" id="login_modal">
+    <div class="modal__container">
+        <div class="modal__close"></div>
+        <div class="modal__content">
+            <h2>Вход на сайт</h2>
+            <!-- start Отправить код -->
+            <form name="login_send_code" class="login__phoneForm">
+                <div class="input">
+                    <input type="text" name="login_phone" id="login_phone" placeholder=" ">
+                    <label for="login_phone">Номер телефона</label>
+                </div>
+
+                <button type="button" class="btn btn--fullWidth login__sendCode">Выслать код</button>
+            </form>
+            <!-- end Отправить код -->
+            <!-- start Ввести код -->
+            <form name="login_enter_code" class="login__codeForm hidden">
+                <div class="login__descr">Код отправили на</div>
+                <div class="login__sentTo">
+                    <span class="login__sentToNumber">+7 900 100 00 00</span>
+                    <a class="link">Изменить</a>
+                </div>
+                <div class="login__code" id="login_code"></div>
+                <button type="button" class="btn btn--fullWidth login__repeatCode" disabled="disabled">Получить новый код через 10 сек.</button>
+            </form>
+            <!-- end Ввести код -->
+            <div class="login__terms">
+                <svg viewBox="0 0 12 9" width="12">
+                    <use href="assets/icons.svg#check"></use>
+                </svg>
+                Cогласен на обработку <a href="#">персональных данных</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <script defer="defer" src="js/169.js"></script><script defer="defer" src="js/main.js"></script></body>
+</html>

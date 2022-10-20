@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+        <title>Трио Пицца</title>
+    <link href="css/main.css" rel="stylesheet"></head>
+    <body>
+        <header class="header container checkout__header">
+            <a href="/" class="header__logo">
+                <img src="assets/logo.svg" alt="TrioPizza">
+                <p>Доставка еды в Москве</p>
+            </a>
+        </header>
+        <div class="checkout" id="checkout_page">
+            <div class="container">
+                <a href="/" class="checkout__back">Назад в корзину</a>
+                <div class="checkout__wrap">
+                    <div>
+                        <h2 class="checkout__title--main">Оформление заказа</h2>
+                        <form name="checkout">
+                            <div class="input checkout__inputPersonal">
+                                <input type="text" name="checkout_name" id="checkout_name" placeholder=" ">
+                                <label for="checkout_name">Имя</label>
+                            </div>
+
+                            <div class="input checkout__inputPersonal">
+                                <input type="text" name="checkout_phone" id="checkout_phone" placeholder=" ">
+                                <label for="checkout_phone">Телефон</label>
+                            </div>
+
+                            <fieldset class="checkout__addresses">
+                                <div class="checkout__address">
+                                    <label class="radio" for="address-1">г. Москва, Старая Басманная ул., 19 строение 13, кв. 62
+                                        <input id="address-1" type="radio" name="checkout_address" value="0" checked="checked">
+                                        <span class="radio__checkmark"></span>
+                                    </label>
+                                    <button type="button" class="link" data-for-modal="change-address">Изменить</button>
+                                </div>
+                                <div class="checkout__address">
+                                    <label class="radio" for="address-2">г. Москва, Цветной б-р, 21 строение 5
+                                        <input id="address-2" type="radio" name="checkout_address" value="1">
+                                        <span class="radio__checkmark"></span>
+                                    </label>
+                                    <button type="button" class="link" data-for-modal="change-address">Изменить</button>
+                                </div>
+                                <button type="button" class="link" data-for-modal="change-address">Добавить адрес</button>
+                            </fieldset>
+
+                            <h2 class="checkout__title--payment">Способ оплаты</h2>
+                            <fieldset class="checkout__payment">
+                                <label class="radio" for="checkout_card">Картой при получении
+                                    <input id="checkout_card" type="radio" name="checkout_payment" value="card" checked="checked">
+                                    <span class="radio__checkmark"></span>
+                                </label>
+
+                                <label class="radio" for="checkout_cash">Наличными
+                                    <input id="checkout_cash" type="radio" name="checkout_payment" value="cash">
+                                    <span class="radio__checkmark"></span>
+                                </label>
+                            </fieldset>
+                            <div class="input" id="checkout_change_wrap">
+                                <input type="text" name="checkout_change" id="checkout_change" placeholder=" ">
+                                <label for="checkout_change">Сдача с</label>
+                            </div>
+
+                            <div class="checkout__promo input input--accepted">
+                                <input type="text" name="checkout_promocode" id="checkout_promocode" placeholder=" " value="GHS577ET2" disabled="disabled">
+                                <label for="checkout_promocode">Промокод</label>
+                            </div>
+
+                            <div class="input checkout__comment">
+                                <textarea name="checkout_comment" id="checkout_comment" placeholder=" "></textarea>
+                                <label for="checkout_comment">Комментарий к заказу</label>
+                            </div>
+
+                            <a href="/success.html" class="btn btn--fullWidth">Оформить заказ на 1756 ₽</a>
+                        </form>
+                    </div>
+                    <div class="checkout__order">
+                        <div class="order">
+                            <p class="order__title">Состав заказа</p>
+                            <div class="order__item">
+                                <div class="order__name">
+                                    <div>Пепперони</div>
+                                    <div class="order__descr">400 г</div>
+                                </div>
+                                <div class="order__sum">2 × 699 ₽</div>
+                            </div>
+                            <div class="order__item">
+                                <div class="order__name">
+                                    <div>Бургер Crazy Chicken</div>
+                                    <div class="order__descr">400 г</div>
+                                </div>
+                                <div class="order__sum">279 ₽</div>
+                            </div>
+                            <div class="order__item">
+                                <div class="order__name">
+                                    <div>Кесадилья с курицей на углях</div>
+                                    <div class="order__descr">400 г</div>
+                                </div>
+                                <div class="order__sum">0 ₽</div>
+                            </div>
+
+                            <div class="order__separator"></div>
+
+                            <div class="order__item order__item--dense">
+                                <div class="order__name">4 товара</div>
+                                <div class="order__sum">1677 ₽</div>
+                            </div>
+                            <div class="order__item order__item--dense">
+                                <div class="order__name">Доставка</div>
+                                <div class="order__sum">79 ₽ </div>
+                            </div>
+                            <div class="order__item order__item--dense">
+                                <div class="order__name">Сумма заказа</div>
+                                <div class="order__sum">1756 ₽ </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="checkout__footer">
+            <footer class="footer">
+    <div class="container">
+        <p class="footer__title">Принимаем заказы</p>
+        <p class="footer__phone">
+            <a href="tel:+74952003020">8 (495) 200 30 20</a>
+        </p>
+        <a class="footer__delivery">Информация о доставке</a>
+        <p class="footer__copy">TrioPizza © 2022</p>
+        <p class="footer__divasoft">
+            <a href="https://divasoft.ru/">Разработано в <img src="assets/divasoft.svg" alt="Divasoft"></a>
+        </p>
+    </div>
+</footer>
+        </div>
+
+        <div class="modal modal--address" data-modal="change-address">
+    <div class="modal__container">
+        <div class="modal__close"></div>
+        <h1 class="modal__title">Изменить адрес</h1>
+        <div class="modal__content changeAddress">
+            <form onsubmit="" name="change-address">
+                <div class="input">
+                    <input type="text" name="address_street" id="address_street" placeholder=" ">
+                    <label for="address_street">Улица</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="address_house" id="address_house" placeholder=" ">
+                    <label for="address_house">Дом</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="address_building" id="address_building" placeholder=" ">
+                    <label for="address_building">Строение</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="address_apt" id="address_apt" placeholder=" ">
+                    <label for="address_apt">Квартира</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="address_entrance" id="address_entrance" placeholder=" ">
+                    <label for="address_entrance">Подъезд</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="address_floor" id="address_floor" placeholder=" ">
+                    <label for="address_floor">Этаж</label>
+                </div>
+
+                <div class="changeAddress__btns">
+                    <a href="#" class="changeAddress__delete">Удалить адрес</a>
+                    <button type="submit" class="btn changeAddress__save">Сохранить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+    <script defer="defer" src="js/169.js"></script><script defer="defer" src="js/main.js"></script></body>
+</html>
