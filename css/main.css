@@ -1978,14 +1978,15 @@ textarea:-webkit-autofill:hover {
     width: max-content;
 }
 .promo__item {
+    width: 160px;
     height: 160px;
     margin-right: 15px;
-    max-width: calc(50vw - 32px);
+    /* max-width: calc(50vw - 32px); */
     position: relative;
 }
 @media (min-width: 1024px) {
     .promo__item {
-        height: auto;
+        height: 360px;
         margin-bottom: 30px;
         max-width: unset;
     }
